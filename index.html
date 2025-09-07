@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Junaid Javaid Malik — Portfolio</title>
+  <meta name="description" content="Portfolio website for Junaid Javaid Malik — projects, skills, and contact." />
+  <meta property="og:title" content="Junaid Javaid Malik — Portfolio" />
+  <meta property="og:description" content="Projects, skills, experience, and contact." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <style>
+    :root{
+      --bg:#0b1020;
+      --panel:#0f172a;
+      --muted:#94a3b8;
+      --text:#e2e8f0;
+      --brand:#38bdf8;
+      --brand-2:#22d3ee;
+      --ring:rgba(56,189,248,.35);
+      --card:#111827;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;scroll-behavior:smooth;background:var(--bg);color:var(--text);font:16px/1.6 system-ui, sans-serif}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1080px;margin-inline:auto;padding:24px}
+    .btn{display:inline-flex;gap:.5rem;align-items:center;padding:.7rem 1rem;border-radius:999px;background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#001018;font-weight:700;box-shadow:0 10px 30px -12px var(--ring);border:0}
+    .chip{display:inline-block;padding:.25rem .6rem;border:1px solid rgba(148,163,184,.25);border-radius:999px;color:var(--muted);font-size:.85rem}
+    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(12px);background:rgba(15,23,42,.9);border-bottom:1px solid rgba(148,163,184,.15);z-index:20}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+    nav .links{display:flex;gap:1rem;flex-wrap:wrap}
+    nav a{color:var(--text);opacity:.85}
+    nav a.active, nav a:hover{opacity:1}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding:72px 24px}
+    .hero h1{font-size:clamp(1.8rem,4vw,3rem);line-height:1.1;margin:.25rem 0}
+    .hero p{color:var(--muted);margin:0 0 1rem}
+    .card{background:var(--card);border:1px solid rgba(148,163,184,.15);border-radius:18px;padding:20px}
+    .avatar{width:100%;aspect-ratio:1/1;border-radius:16px;object-fit:cover;border:1px solid rgba(148,163,184,.18)}
+    section{padding:48px 24px}
+    h2{font-size:clamp(1.3rem,2.4vw,2rem);margin:0 0 12px}
+    .muted{color:var(--muted)}
+    .grid{display:grid;gap:16px}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}}
+    footer{padding:36px 24px;color:var(--muted);border-top:1px solid rgba(148,163,184,.15)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#home" class="brand" style="font-weight:800;">Junaid<span style="color:var(--brand)">Malik</span></a>
+        <div class="links">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="container">
+    <section class="hero">
+      <div>
+        <p class="chip">Field Engineer · IT Support · Networking</p>
+        <h1>Hi, I’m <span style="color:var(--brand)">Junaid Javaid Malik</span>. I keep systems fast, secure, and online.</h1>
+        <p>IT Support Specialist with 4+ years across Windows/Linux, networking (LAN/WAN, DHCP, RIPV2), hardware/software troubleshooting, and proxy/remote desktop support. CCNA + Cybersecurity aware; I reduce downtime and improve reliability.</p>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn" style="background:transparent;border:1px solid rgba(148,163,184,.35);color:var(--text)" href="#contact">Contact Me</a>
+          <a class="btn" style="background:transparent;border:1px dashed rgba(148,163,184,.4);color:var(--text)" href="resume/Junaid_Javaid_Malik_Resume.pdf">Download Resume (PDF)</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="avatar" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=800&auto=format&fit=crop" alt="Profile" />
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3><a href="https://github.com/Malik-junni67/chatroom" target="_blank">Chatroom Application</a></h3>
+          <p class="muted">Real‑time chat built with Django, HTML, and CSS; clean UI and simple auth.</p>
+        </div>
+        <div class="card">
+          <h3>Automatic Solar Panel</h3>
+          <p class="muted">IoT project that auto‑orients a panel to improve light capture and efficiency.</p>
+        </div>
+        <div class="card">
+          <h3>Online Attendance System</h3>
+          <p class="muted">Replaced manual attendance with a streamlined web workflow; reduced admin time.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Windows & Linux Administration</li>
+        <li>Networking (LAN/WAN, DHCP, RIPV2)</li>
+        <li>Remote Desktop & Proxy Management</li>
+        <li>Hardware & Software Troubleshooting</li>
+        <li>Django, PHP & MySQL</li>
+        <li>Cybersecurity & Penetration Testing</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>Field Engineer — TNS Networking Solutions</h3>
+        <p class="muted">Nov 2024 – Present</p>
+        <ul>
+          <li>End‑to‑end client support across hardware/software, network setup, and proxy management.</li>
+          <li>Proactive issue resolution to minimize downtime.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>IT Support Specialist — PIE Classes</h3>
+        <p class="muted">Jan 2024 – Nov 2024</p>
+        <ul>
+          <li>Resolved daily support tickets for staff/students.</li>
+          <li>Improved troubleshooting flow and reduced average resolution time.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>IT Support Engineer — BCI Institution</h3>
+        <p class="muted">Jul 2021 – Jan 2024</p>
+        <ul>
+          <li>Led cybersecurity awareness campaign reducing incidents by 50% within 6 months.</li>
+          <li>Implemented Online Attendance System.</li>
+          <li>Developed cost-saving OMR checking software.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="muted">Let’s connect and discuss opportunities.</p>
+      <p>Email: <a href="mailto:malikjunni67@gmail.com">malikjunni67@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/Malik-junni67">github.com/Malik-junni67</a></p>
+      <p>Location: Pulwama/Srinagar, India</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© <span id="year"></span> Junaid Javaid Malik. Hosted on GitHub Pages.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
